@@ -1,26 +1,16 @@
-import './style.css';
-import './glitch.css';
+import './styles/home.css';
+import './styles/glitch.css';
 
 export default function loadHome() {
-  const content = document.createElement('div');
-  content.setAttribute('id', 'content');
-
   const header = document.createElement('h1');
+  header.classList.add('hero');
+  header.classList.add('glitch');
+  header.classList.add('layers');
 
-  const glitchSpan1 = document.createElement('span');
-  glitchSpan1.innerHTML = "Lo-Fi Cafe";
-  const glitchSpan2 = document.createElement('span');
-  glitchSpan2.innerHTML = "Lo-Fi Cafe";
-  glitchSpan2.setAttribute('aria-hidden', 'true');
-  const glitchSpan3 = document.createElement('span');
-  glitchSpan3.innerHTML = "Lo-Fi Cafe";
-  glitchSpan3.setAttribute('aria-hidden', 'true');
+  const span = document.createElement('span');
+  span.innerHTML = "Lo-Fi Cafe";
 
-  header.appendChild(glitchSpan1);
-  header.appendChild(glitchSpan2);
-  header.appendChild(glitchSpan3);
+  header.appendChild(span);
 
-  content.appendChild(header);
-  
-  document.body.appendChild(content);
+  return header
 }

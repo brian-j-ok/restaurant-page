@@ -37,4 +37,9 @@ function createNavbar() {
 
 document.body.appendChild(createNavbar());
 
-loadHome();
+const content = document.createElement('div');
+content.setAttribute('id', 'content');
+
+content.appendChild(loadHome());
+
+document.body.appendChild(content);
