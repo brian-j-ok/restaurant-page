@@ -1,0 +1,11 @@
+.home-section {
+  display: grid;
+  place-content: center;
+}
+
+.home-section h1 {
+  margin: 10px 0px;
+  padding: 20px 20px;
+  backdrop-filter: blur(8px);
+  border-radius: 24px;
+}
