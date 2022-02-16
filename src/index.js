@@ -1,5 +1,12 @@
 import loadHome from "./home.js";
 import './style.css';
+import Background from './cafe-background.gif';
+
+const myBackground = new Image();
+myBackground.src = Background;
+myBackground.classList.add('background-img');
+
+document.body.appendChild(myBackground);
 
 function createNavbar() {
   const navbar = document.createElement('nav');

@@ -1,6 +1,12 @@
+@font-face {
+  font-family: 'VCR';
+  src: url('./VCR_MONO.ttf') format('truetype');
+}
+
 *, *::before, *::after {
   margin: 0px;
   padding: 0px;
+  font-family: 'VCR', monospace;
 }
 
 .navbar ul {
