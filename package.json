@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Restaurant Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brian-j-ok/restaurant-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brian-j-ok/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/brian-j-ok/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.69.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
