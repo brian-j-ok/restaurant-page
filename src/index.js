@@ -1,5 +1,5 @@
 import loadHome from "./home.js";
-import './style.css';
+import './styles/style.css';
 import Background from './cafe-background.gif';
 
 const myBackground = new Image();
