@@ -8,12 +8,19 @@
   padding: 20px 20px;
   border-radius: 24px;
   text-align: center;
+
+  backdrop-filter: blur(8px);
 }
 
 .home-section div {
-  
   margin: 10px 0px;
   padding: 20px 20px;
   display: grid;
   place-content: center;
+}
+
+.home-section h2 {
+  padding: 20px 20px 0px 20px;
+  backdrop-filter: blur(8px);
+  border-radius: 24px;
 }

@@ -49,6 +49,15 @@ function createNavbar() {
   return navbar;
 }
 
+function createFooter() {
+  const footer = document.createElement('footer');
+  footer.classList.add('footer');
+
+  footer.innerHTML = "No rights, just chill";
+
+  return footer
+};
+
 document.body.appendChild(createNavbar());
 
 const content = document.createElement('div');
@@ -57,3 +66,6 @@ content.setAttribute('id', 'content');
 content.appendChild(loadHome());
 
 document.body.appendChild(content);
+
+document.body.appendChild(createFooter());
+
