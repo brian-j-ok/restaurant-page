@@ -13,3 +13,20 @@
   backdrop-filter: blur(8px);
   border-radius: 24px;
 }
+
+.menu-item>img {
+  width: 100%;
+}
+
+.menu-title {
+  margin: 10px 0px;
+  padding-bottom: 10px;
+  border-bottom: solid 2px white;
+}
+
+@media (max-width: 600px) {
+  .menu-items {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
