@@ -2,14 +2,7 @@ import loadHome from "./home.js";
 import loadMenu from "./menu.js";
 
 import './styles/style.css';
-import Background from './imgs/cafe-background.gif';
 import loadContact from "./contact.js";
-
-const myBackground = new Image();
-myBackground.src = Background;
-myBackground.classList.add('background-img');
-
-document.body.appendChild(myBackground);
 
 function createNavbar() {
   const navbar = document.createElement('nav');
