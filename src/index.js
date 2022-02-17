@@ -1,6 +1,8 @@
 import loadHome from "./home.js";
+import loadMenu from "./menu.js";
+
 import './styles/style.css';
-import Background from './cafe-background.gif';
+import Background from './imgs/cafe-background.gif';
 
 const myBackground = new Image();
 myBackground.src = Background;
@@ -18,9 +20,21 @@ function createNavbar() {
   // Create li elements with anchors for navbar
   let navlink1 = document.createElement('li');
   navlink1.innerHTML = "Home";
+  navlink1.addEventListener('click', () => {
+    if (content.firstChild.classList == 'home-section') return
+
+    content.firstChild.remove();
+    content.appendChild(loadHome());
+  });
 
   let navlink2 = document.createElement('li');
   navlink2.innerHTML = "Menu";
+  navlink2.addEventListener('click', () => {
+    if (content.firstChild.classList == 'menu-section') return
+
+    content.firstChild.remove();
+    content.appendChild(loadMenu());
+  })
 
   let navlink3 = document.createElement('li');
   navlink3.innerHTML = "Contact";

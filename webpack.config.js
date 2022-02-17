@@ -5,7 +5,8 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
-    print: './src/home.js',
+    home: './src/home.js',
+    menu: './src/menu.js',
   },
   output: {
     filename: '[name].bundle.js',
