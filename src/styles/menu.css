@@ -1,0 +1,15 @@
+.menu-items {
+  margin: 20px 0px;
+
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.menu-item {
+  padding: 15px 10px;
+  backdrop-filter: blur(8px);
+  border-radius: 24px;
+}

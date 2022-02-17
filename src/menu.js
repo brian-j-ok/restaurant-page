@@ -27,6 +27,9 @@ export default function loadMenu() {
   menu.appendChild(header);
 
   // Menu Items Code
+  const menuItems = document.createElement('div');
+  menuItems.classList.add('menu-items');
+
   for (let i=0; i<menuImages.length; i++) {
     let menuItem = document.createElement('div');
     menuItem.classList.add('menu-item');
@@ -42,8 +45,10 @@ export default function loadMenu() {
     menuItem.appendChild(menuPicture);
     menuItem.appendChild(menuDesc);
 
-    menu.appendChild(menuItem);
+    menuItems.appendChild(menuItem);
   };
+
+  menu.appendChild(menuItems);
 
   return menu;
 }

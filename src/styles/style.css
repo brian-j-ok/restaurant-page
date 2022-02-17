@@ -7,6 +7,7 @@
   margin: 0px;
   padding: 0px;
   font-family: 'VCR', monospace;
+  color: #fff;
 }
 
 .navbar ul {
@@ -41,4 +42,11 @@
   left: 0;
 
   z-index: -10;
+}
+
+#content>section {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
 }
