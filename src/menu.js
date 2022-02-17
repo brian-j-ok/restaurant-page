@@ -5,14 +5,18 @@ import Ramen from './imgs/ramen.gif';
 import Steak from './imgs/steak.gif';
 import Spaget from './imgs/spaget.gif';
 import FriedRice from './imgs/fried_rice.gif';
+import Pizza from './imgs/pizza.gif';
+import Child from './imgs/child.gif';
 
-const menuImages = [Ramen, Steak, Spaget, FriedRice];
-const menuTitles = ['Ramen', 'Steak', 'Spagetti', 'Fried Rice'];
+const menuImages = [Ramen, Steak, Spaget, FriedRice, Pizza, Child];
+const menuTitles = ['Ramen', 'Steak', 'Spagetti', 'Fried Rice', 'Pizza', 'Child'];
 const menuDescriptions = [
-  "Ramen because ... Ramen",
-  "Steak that looks way better than a steak should",
+  "A basic dish for your basic weeb self",
+  "Our best reviews ask 'Why is that steak orange?'",
   "Is spagetti japanese?",
   "Totally realistic egg physics",
+  "Does this cafe even serve coffee?",
+  "The dish is the child not the eggs and bacon",
 ];
 
 export default function loadMenu() {

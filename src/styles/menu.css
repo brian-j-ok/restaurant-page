@@ -24,7 +24,7 @@
   border-bottom: solid 2px white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .menu-items {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
