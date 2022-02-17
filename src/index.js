@@ -3,6 +3,7 @@ import loadMenu from "./menu.js";
 
 import './styles/style.css';
 import Background from './imgs/cafe-background.gif';
+import loadContact from "./contact.js";
 
 const myBackground = new Image();
 myBackground.src = Background;
@@ -34,10 +35,16 @@ function createNavbar() {
 
     content.firstChild.remove();
     content.appendChild(loadMenu());
-  })
+  });
 
   let navlink3 = document.createElement('li');
   navlink3.innerHTML = "Contact";
+  navlink3.addEventListener('click', () => {
+    if(content.firstChild.classList == 'contact-section') return
+
+    content.firstChild.remove();
+    content.appendChild(loadContact());
+  });
 
   // Append navlinks to navlist
   navlist.appendChild(navlink1);
