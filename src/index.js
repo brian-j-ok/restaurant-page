@@ -63,7 +63,7 @@ document.body.appendChild(createNavbar());
 const content = document.createElement('div');
 content.setAttribute('id', 'content');
 
-content.appendChild(loadContact());
+content.appendChild(loadHome());
 
 document.body.appendChild(content);
 
