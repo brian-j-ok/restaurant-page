@@ -1,8 +1,8 @@
 import loadHome from "./home.js";
 import loadMenu from "./menu.js";
+import loadContact from "./contact.js";
 
 import './styles/style.css';
-import loadContact from "./contact.js";
 
 function createNavbar() {
   const navbar = document.createElement('nav');
@@ -63,7 +63,7 @@ document.body.appendChild(createNavbar());
 const content = document.createElement('div');
 content.setAttribute('id', 'content');
 
-content.appendChild(loadHome());
+content.appendChild(loadContact());
 
 document.body.appendChild(content);
 
