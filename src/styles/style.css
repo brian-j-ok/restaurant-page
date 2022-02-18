@@ -8,6 +8,7 @@
   padding: 0px;
   font-family: 'VCR', monospace;
   color: #fff;
+  -webkit-text-stroke: .75px black;
 
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -38,6 +39,7 @@ body {
 
 .navbar li {
   padding: 10px 10px;
+  font-size: 28px;
 
   color: white;
   font-size: 24px;
@@ -57,6 +59,15 @@ body {
   align-items: center;
 }
 
+#content>section>h1 {
+  margin: 10px 0px;
+  padding: 20px 20px;
+  border-radius: 24px;
+  text-align: center;
+
+  backdrop-filter: blur(8px);
+}
+
 /* Footer */
 .footer {
   width: 100vw;
@@ -66,6 +77,7 @@ body {
   bottom: 0;
   left: 0;
 
+  font-size: 28px;
   text-align: center;
 
   background-color: hsl(0, 0%, 0%, .5);
